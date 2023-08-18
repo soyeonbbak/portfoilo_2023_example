@@ -1,0 +1,118 @@
+/* 반응형 대비 최소제한 너비 설정 */
+header, main{min-width: 900px;}
+/* header */
+header {
+    position: fixed; left: 0; top: 0; width: 100%; z-index: 999;
+    padding: 20px 30px 0 30px;
+    background: #FFF;
+}
+header nav {
+    border-top:1px solid black; padding: 20px 0;
+    border-bottom:5px solid black;
+    display: flex; justify-content: space-between;
+}
+header nav .gnb {white-space: nowrap;}
+header nav .gnb a {
+    display: inline-block; margin-right: 50px;
+    font-weight: 700; color: #999;
+}
+header nav .gnb a:hover{color: black; filter:drop-shadow(5px 5px 1px #999)}
+header nav .sns {white-space: nowrap;}
+header nav .sns span {
+    padding-right: 10px;
+}
+/* #home */
+main {} 
+main > *{padding: 0 30px;} 
+main #home {
+    text-align: center; height: 100vh;
+} 
+main #home h1 {padding-top: 200px;} 
+main #home h1 img {} 
+main #home .mouse {
+    position: absolute; left: 50%; bottom: 50px;
+    transform: translateX(-50%);
+} 
+main #home .mouse img {
+    animation: mouse_move 1s linear alternate infinite;
+} 
+@keyframes mouse_move{
+    0%{transform: translateY(0);}
+    100%{transform: translateY(30px);}
+}
+/* skill */
+main #skill {
+    width: 100%; height: 100%;
+}
+main #skill h1 {
+    font-weight: 700; font-size: 2.5em;
+    border-bottom: 5px solid black; padding:10px 0 ;
+}
+main #skill .container {
+    /* 스킬 9개 수직 줄바꿈으로 배치하는 flex */
+    display: flex; flex-flow: column wrap;
+    /* background: pink;  */height: 800px;
+    justify-content: space-around;
+}
+main #skill .container li{
+    /* 아이콘, 글자 옆으로 배치하는 flex */
+    display: flex; flex-flow: row nowrap;
+    width: 45%; align-content: space-between;
+    border-bottom: 1px dashed black;
+    margin:20px 0; padding-bottom: 30px;
+    
+}
+main #skill .container li:first-child{margin-top: 50px;}
+main #skill .container li:nth-child(4){margin-bottom: 150px;}
+main #skill .container li .icon {
+    width: 90px;
+}
+main #skill .container li .icon img {}
+main #skill .container li .contents {
+    width: calc(100% - 90px); font-size: 0.8em; line-height: 30px;
+}
+/* profile */
+main #profile {
+    width: 100%;
+    height: 100vh;
+}
+main #profile h1 {
+    padding: 100px 0 100px 150px; 
+}
+main #profile h1 img {}
+main #profile .container {
+    display: flex; 
+    padding-bottom: 100px;
+}
+main #profile .container .my_info{
+    display: flex; flex-flow: column nowrap;
+    /* justify-content: space-between; */
+    padding: 0 10% 0 17%; 
+}
+main #profile .container .my_info p{
+    line-height: 40px;
+}
+main #profile .container .my_info p em{font-weight: 600; font-size: 1.5em;}
+main #profile .container .my_info .photo {
+    width: 300px;
+}
+main #profile .container .my_info .photo img {}
+main #profile .container .info {
+    width: 50%; 
+}
+main #profile .container .info dl {
+    display: flex; flex-flow: row nowrap;
+}
+main #profile .container .info dl > *{
+    line-height: 40px; border-bottom: 1px dashed #ccc;
+}
+main #profile .container .info dl dt {
+    width: 100px; 
+}
+main #profile .container .info dl dt dd {
+    width: calc(100% - 100px);
+}
+main #profile .container .info .hobby {
+    margin-top: 100px; line-height: 40px;
+}
+main #profile .container .info .hobby li {line-height: 40px;}
