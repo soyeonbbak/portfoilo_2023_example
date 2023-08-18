@@ -107,7 +107,7 @@ main #profile .container .info dl > *{
     line-height: 40px; border-bottom: 1px dashed #ccc;
 }
 main #profile .container .info dl dt {
-    width: 100px; 
+    width: 200px; 
 }
 main #profile .container .info dl dt dd {
     width: calc(100% - 100px);
