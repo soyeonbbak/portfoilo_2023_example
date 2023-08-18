@@ -1,3 +1,4 @@
+body, html {scroll-behavior: smooth;}
 /* 반응형 대비 최소제한 너비 설정 */
 header, main{min-width: 900px;}
 /* header */
@@ -86,7 +87,6 @@ main #profile .container {
 }
 main #profile .container .my_info{
     display: flex; flex-flow: column nowrap;
-    /* justify-content: space-between; */
     padding: 0 10% 0 17%; 
 }
 main #profile .container .my_info p{
@@ -116,3 +116,28 @@ main #profile .container .info .hobby {
     margin-top: 100px; line-height: 40px;
 }
 main #profile .container .info .hobby li {line-height: 40px;}
+/* project */
+main #project_web1 {
+    text-align: center; background: #eee url(../img/web1.png) no-repeat center;
+    width: 100%; height: 100vh;
+}
+main #project_web1 h1 {
+    font-size: 2em; font-weight: 700;
+    text-align: center; padding-top: 50px;
+}
+main #project_web1 .preview {}
+main #project_web1 .preview .project_info {margin: 20px 0;}
+main #project_web1 .preview .project_info p {
+    line-height: 30px; padding-top: 35%; font-size: 0.9em;
+}
+main #project_web1 .link {
+    margin-top: 50px; text-align: center;}
+main #project_web1 .link a {
+    padding: 10px; border-radius: 10px;
+    background: black; color: #fff;
+    margin-right: 120px;
+}
+main #project_web1 .link a:hover {filter: brightness(130%) contrast(150%);}
+main #project_web1 .link a:last-child {
+    background: #FF7B7B; margin-right: 0;
+}
